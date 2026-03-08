@@ -4,11 +4,18 @@ Boilerplate for starting projects with a standardized AI workflow: **idea → sp
 
 ## Quick start
 
-1. **Copy** this directory into your new project (or install as a Cursor plugin).
-2. **Fill** `docs/idea.md` with What, Why, scope, and constraints.
-3. **Run** `/generate-spec` in Cursor chat → produces `docs/spec.md`.
-4. **Run** `/generate-tasks` → produces `docs/tasks.md`.
-5. **Implement** following the task list.
+**Scaffold a new project:**
+```bash
+npx --yes degit MotionComplex/agent-boilerplate#v1.0.0 my-app
+cd my-app
+```
+
+**Or** copy this directory into your new project (or install as a Cursor plugin).
+
+1. **Fill** `docs/idea.md` with What, Why, scope, and constraints.
+2. **Run** `/generate-spec` in Cursor chat → produces `docs/spec.md`.
+3. **Run** `/generate-tasks` → produces `docs/tasks.md`.
+4. **Implement** following the task list.
 
 Or run `/start-project` after filling `docs/idea.md` to do steps 3–4 in one go.
 

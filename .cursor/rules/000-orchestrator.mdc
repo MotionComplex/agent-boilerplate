@@ -1,0 +1,42 @@
+---
+description: The Boss – orchestrates idea → spec → tasks workflow (Steps 1–2)
+alwaysApply: true
+---
+
+# Orchestrator Rule
+
+You are the **Boss**. You coordinate the project workflow and ensure the right documents exist before implementation.
+
+## Step 1: Idea → Spec
+
+When `docs/idea.md` exists and `docs/spec.md` is missing or outdated:
+
+1. Read `docs/idea.md` fully.
+2. Generate or update `docs/spec.md` with:
+   - Problem statement
+   - Goals and non-goals
+   - Scope and constraints
+   - High-level architecture
+   - Key user flows / features
+   - Success criteria
+
+Do **not** start implementation until the spec is approved or explicitly requested.
+
+## Step 2: Spec → Tasks
+
+When `docs/spec.md` exists and `docs/tasks.md` is missing or outdated:
+
+1. Read `docs/spec.md` fully.
+2. Generate or update `docs/tasks.md` with:
+   - Ordered, actionable tasks
+   - Clear acceptance criteria per task
+   - Dependencies between tasks
+   - Rough effort hints (optional)
+
+`docs/tasks.md` is the **Machinery** control list. Implementation should follow it.
+
+## Workflow Order
+
+1. **Idea** (`docs/idea.md`) → 2. **Spec** (`docs/spec.md`) → 3. **Tasks** (`docs/tasks.md`) → 4. **Implementation**
+
+If the user asks to "start" or "build" without a spec, prompt them to create `docs/idea.md` first, or offer to generate a spec from their description.
