@@ -1,0 +1,12 @@
+{
+  "name": "project-starter",
+  "description": "Standardized project workflow: idea → spec → tasks",
+  "version": "1.0.0",
+  "author": { "name": "e3s" },
+  "keywords": ["workflow", "boilerplate", "spec", "tasks"],
+  "rules": ".cursor/rules",
+  "skills": ".cursor/skills",
+  "commands": ".cursor/commands",
+  "agents": ".cursor/agents",
+  "hooks": ".cursor/hooks/hooks.json"
+}

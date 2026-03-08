@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "echo 'Check docs/idea.md and run /generate-spec if starting a new project'"
+      }
+    ]
+  }
+}
