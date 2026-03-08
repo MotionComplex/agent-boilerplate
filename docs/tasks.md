@@ -1,19 +1,20 @@
 # Tasks
 
-> Your "Machinery" control list. Generated from `docs/spec.md`. Work through in order.
+> Agent-oriented task list. Generated from `docs/spec.md`. Work through in order. Each task is granular with concrete acceptance criteria and implementation hints.
 
 <!--
-  Run /generate-tasks or the generate-tasks skill with docs/spec.md to generate this file.
+  Run /generate-tasks to generate this file.
+  Run /generate-features to add Gherkin specs in docs/features/.
   Mark tasks as done with [x] when complete.
 -->
 
 ## Task list
 
-- [ ] **Task 1**: 
+- [ ] **Task 1.1**: 
   - Acceptance: 
-- [ ] **Task 2**: 
+  - File: 
+- [ ] **Task 1.2**: 
   - Acceptance: 
-- [ ] **Task 3**: 
-  - Acceptance: 
+  - Depends: Task 1.1
 
-<!-- Add more tasks as needed. Dependencies: Task N depends on Task M. -->
+<!-- Add more tasks. Use sub-tasks (Task N.M) for large features. Include File and Contract when applicable. -->

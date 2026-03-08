@@ -13,8 +13,9 @@ Open in Cursor, then:
 
 1. **Fill** `docs/idea.md` with What, Why, scope, and constraints.
 2. **Run** `/generate-spec` in Cursor chat → produces `docs/spec.md`.
-3. **Run** `/generate-tasks` → produces `docs/tasks.md`.
-4. **Implement** following the task list.
+3. **Run** `/generate-tasks` → produces agent-friendly `docs/tasks.md` (granular sub-tasks, implementation hints).
+4. **Run** `/generate-features` (optional) → produces Gherkin specs in `docs/features/`.
+5. **Implement** following the task list.
 
 Or run `/start-project` after filling `docs/idea.md` to do steps 2–3 in one go.
 
@@ -23,18 +24,19 @@ Or run `/start-project` after filling `docs/idea.md` to do steps 2–3 in one go
 ## Workflow
 
 ```
-docs/idea.md  →  docs/spec.md  →  docs/tasks.md  →  implementation
-     ↑                ↑                ↑
-  You fill      /generate-spec    /generate-tasks
+docs/idea.md  →  docs/spec.md  →  docs/tasks.md  →  docs/features/  →  implementation
+     ↑                ↑                ↑                  ↑
+  You fill      /generate-spec   /generate-tasks   /generate-features (optional)
 ```
 
 ## Skills
 
-| Skill             | Use when                                     |
-| ----------------- | -------------------------------------------- |
-| `/generate-spec`  | `docs/idea.md` is filled; you want a spec    |
-| `/generate-tasks` | `docs/spec.md` exists; you want a task list  |
-| `/start-project`  | You want the full flow (idea → spec → tasks) |
+| Skill               | Use when                                              |
+| ------------------- | ----------------------------------------------------- |
+| `/generate-spec`    | `docs/idea.md` is filled; you want a spec             |
+| `/generate-tasks`   | `docs/spec.md` exists; you want an agent-friendly task list |
+| `/generate-features`| `docs/tasks.md` exists; you want Gherkin feature specs |
+| `/start-project`    | You want the full flow (idea → spec → tasks → features) |
 
 ## Roles
 

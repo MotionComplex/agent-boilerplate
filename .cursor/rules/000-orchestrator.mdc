@@ -27,11 +27,12 @@ Do **not** start implementation until the spec is approved or explicitly request
 When `docs/spec.md` exists and `docs/tasks.md` is missing or outdated:
 
 1. Read `docs/spec.md` fully.
-2. Generate or update `docs/tasks.md` with:
-   - Ordered, actionable tasks
-   - Clear acceptance criteria per task
+2. Generate or update `docs/tasks.md` with **agent-friendly** tasks:
+   - Granular sub-tasks (Task N.1, N.2) for large features
+   - Concrete, testable acceptance criteria (no vague "works" or "integrated")
+   - Implementation hints: File path, Contract (types, props, API shapes)
    - Dependencies between tasks
-   - Rough effort hints (optional)
+3. Optionally generate `docs/features/*.feature` (Gherkin) for key user flows via `/generate-features`.
 
 `docs/tasks.md` is the **Machinery** control list. Implementation should follow it.
 

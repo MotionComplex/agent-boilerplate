@@ -24,10 +24,15 @@ Chains idea → spec → tasks in one flow.
 
 3. **Run generate-tasks**:
    - Read `docs/spec.md`
-   - Produce `docs/tasks.md` with ordered tasks, acceptance criteria, dependencies
+   - Produce `docs/tasks.md` with agent-friendly tasks: granular sub-tasks, concrete acceptance criteria, File/Contract hints, dependencies
    - Write to `docs/tasks.md`
 
-4. **Summarize** for the user: spec and tasks are ready. Suggest they review `docs/spec.md` before implementation. Do not start implementation unless explicitly requested.
+4. **Run generate-features** (optional but recommended):
+   - Read `docs/spec.md` and `docs/tasks.md`
+   - Produce Gherkin `.feature` files in `docs/features/` for key user flows
+   - Link scenarios to tasks via `@task-N.M` tags
+
+5. **Summarize** for the user: spec, tasks, and (if generated) features are ready. Suggest they review `docs/spec.md` before implementation. Do not start implementation unless explicitly requested.
 
 ## Error handling
 
