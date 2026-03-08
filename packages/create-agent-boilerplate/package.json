@@ -1,6 +1,6 @@
 {
   "name": "create-agent-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Scaffold a new project with the agent-boilerplate workflow",
   "bin": {
     "create-agent-boilerplate": "index.js"
@@ -9,7 +9,12 @@
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["agent", "boilerplate", "cursor", "scaffold"],
+  "keywords": [
+    "agent",
+    "boilerplate",
+    "cursor",
+    "scaffold"
+  ],
   "author": "MotionComplex",
   "license": "MIT",
   "repository": {
@@ -17,7 +22,9 @@
     "url": "https://github.com/MotionComplex/agent-boilerplate.git",
     "directory": "packages/create-agent-boilerplate"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "degit": "^2.8.4",
     "prompts": "^2.4.2"
