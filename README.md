@@ -6,8 +6,13 @@ Boilerplate for starting projects with a standardized AI workflow: **idea → sp
 
 **Scaffold a new project:**
 ```bash
+npx create-agent-boilerplate
+```
+Prompts for project name, then scaffolds. Or pass the name: `npx create-agent-boilerplate my-app`
+
+**Alternative** (no prompt):
+```bash
 npx --yes degit MotionComplex/agent-boilerplate#v1.0.0 my-app
-cd my-app
 ```
 
 **Or** copy this directory into your new project (or install as a Cursor plugin).
